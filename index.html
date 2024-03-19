@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing</title>
+<!-- css -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Product Listing</h1>
+
+    <!-- filter by category dropdown list - all categories, men's clothing, jewelry, electronics, women's clothing -->
+    <!-- note: when the page loads, this should display all the products in the API link -->
+    <select id="category-filter">
+        <option value="">All Categories</option> <!-- default display -->
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="jewelery">Jewelry</option>
+        <option value="electronics">Electronics</option>
+        <option value="women's clothing">Women's Clothing</option>
+    </select>
+
+    <!-- sort by price buttons -->
+    <div>
+        <button class="sort-btn" onclick="sortByPrice('asc')">Sort by Price (Low to High)</button>
+        <button class="sort-btn" onclick="sortByPrice('desc')">Sort by Price (High to Low)</button>
+    </div>
+
+    <!-- container to display products -->
+    <div id="product-list"></div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
